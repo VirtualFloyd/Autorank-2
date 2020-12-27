@@ -38,6 +38,26 @@ ranks:
             rank change: Member;Vip
             command: 'say &p has just been promoted to VIP!; give &p 1 100; tell &p You have just earned 100 stone!'
             message: 'Congratulations, you are now a vip.'
+            vip: 
+                requirements: 
+                    time:
+                         value: 15d 
+                    world:
+                         value: survival
+                    gamemode:
+                         value: 0
+                    mobs killed: 
+                         value: 50:creeper
+                    blocks broken:
+                         value: 1;5000
+                    blocks moved: 
+                         value: 10000;0
+                         worldguard region: 
+                             value: TestRegion
+                    results: 
+                        rank change: VIP;VIP+
+                    command: 'say &p has just been promoted to VIP+!; give &p 1 100; tell &p You have just earned 100 stone!'
+                    message: 'congrats, you are now VIP+'
             
 # new requirements and results can be added by other plugins that hook into the Autorank API
 # these are the ones that are included in the main plugin:
